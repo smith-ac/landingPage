@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+
+.clr-orange {
+  color: #f1a800;
+}
+
+.clr-blue {
+  color: #007ec7;
+}
+
+.main-section {
+  background-image: url("../assets/cistcor-bg-store.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  height: 380px;
+  padding: 20px 25px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 10px;
+  border: 1px solid #ececec;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.splide-content p {
+  font-size: 18px;
+}
+
+.splide__arrow {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .splide__arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: none;
+  }
+
+  .splide__arrow--prev {
+    left: -22px;
+  }
+
+  .splide__arrow--next {
+    right: -22px;
+  }
+
+  .txt {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .splide__arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: none;
+  }
+
+  .splide__arrow--prev {
+    left: -22px;
+  }
+
+  .splide__arrow--next {
+    right: -22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .splide__arrow {
+    display: none;
+  }
+}
+
+.card-item {
+  border: 2px solid #f1a800;
+  border-radius: 20px;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+}
+
+.card-item:hover .card-item-bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+
+.card-item-content {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  position: relative;
+}
+
+.card-item-content p {
+  font-size: 18px;
+}
+
+.card-item-bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sectwo {
+  background-color: #ececec;
+}
+
+.secistcor {
+  background-image: url("../assets/cistcor-bg-store.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cistfact img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.secfrase {
+  background-color: #ececec;
+}
+
+.sectuto {
+  background-color: #1c1d1f;
+}
+
+.secard {
+  background-color: #1c1d1f;
+}
+
+.price-toggle {
+  display: flex;
+  justify-content: center;
+  border: solid 2px #eaebee;
+  width: 240px;
+  padding: 10px 0;
+  gap: 10px;
+  background-color: white;
+  box-shadow: 0 0 7px 7px rgba(33, 33, 41, 0.082);
+  border-radius: 30px;
+  color: white;
+}
+
+.price-toggle button {
+  border: none;
+  background-color: transparent;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.price-monthly {
+  display: block;
+}
+
+.price-anual {
+  display: none;
+}
+
+.price-toggle .active {
+  background-color: #f1a800;
+  color: white;
+}
+
+.card-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 7px 7px rgba(33, 33, 41, 0.082);
+  height: auto;
+  margin: 20px;
+}
+
+.header-box {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-box h3 {
+  color: #f1a800;
+}
+
+.price span {
+  font-size: 18px;
+}
+
+.list-box {
+  padding: 0 25px;
+}
+
+.list-box ul li {
+  margin-bottom: 2px;
+  display: flex;
+  gap: 10px;
+}
+
+.bi-check2 {
+  color: #3ecd5e;
+  font-size: 18px;
+}
+
+.bi-x {
+  color: red;
+  font-size: 18px;
+}
+
+.btn-plan {
+  background-color: #007ec7;
+  border: 0.5px solid #007ec7;
+  color: white;
+  font-size: 18px;
+}
+
+.btn-plan:hover {
+  background-color: #f1a800;
+  color: white;
+  transition: ease 0.2s;
+}
+
+.dropdown {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 15px;
+}
+
+.dropdown-header {
+  background-color: #f1a800;
+  padding: 10px 12px 3px 12px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-header i {
+  transition: transform 0.3s ease;
+}
+
+.dropdown-list {
+  display: none;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.dropdown-list li {
+  display: flex;
+  gap: 5px;
+}
+
+.dropdown.active .dropdown-list {
+  display: block;
+}
+
+.dropdown.active .dropdown-header i {
+  transform: rotate(180deg);
+}
+
+.secwarranty {
+  background-color: #ececec;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #c5c5c5;
+  color: #333;
+}
+
+.accordion-item h6 {
+  padding: 20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  padding: 0 1em;
+}
+
+.accordion-content.active {
+  max-height: auto;
+}
+
+.accordion-item h6 {
+  position: relative;
+  padding-right: 30px;
+}
+
+.accordion-item h6::before {
+  content: "+";
+  position: absolute;
+  right: 10px;
+}
+
+.accordion-item.active h6::before {
+  content: "x";
+}
+
+@media screen and (min-width: 768px) {
+  .main-text h1 {
+    font-size: 50px;
+  }
+}
+
+footer {
+  background-color: #1c1d1f;
+  color: white;
+  padding: 30px 0 20px 0;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.ico-social {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.bor-cicle {
+  background-color: #f1a800;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 6px 20px;
+}
+
+.card-recod {
+  background-color: white;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
